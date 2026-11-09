@@ -1,0 +1,13 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; color: #172b4d; background: #f3f7fc; }
+header, footer { background: #12478b; color: white; text-align: center; padding: 16px; }
+nav { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; padding: 14px; background: #dceafa; }
+button { padding: 10px 14px; border: 0; border-radius: 5px; background: #12478b; color: white; cursor: pointer; }
+button:hover, button:focus-visible { background: #092b58; }
+main { max-width: 700px; min-height: 320px; margin: 24px auto; padding: 24px; background: white; border-radius: 8px; }
+label { display: block; margin: 14px 0 5px; }
+input { width: 100%; padding: 10px; border: 1px solid #63768d; border-radius: 4px; }
+form button { margin-top: 15px; }
+li { margin: 10px 0; padding: 10px; background: #edf4ff; border-radius: 5px; }
+li button { margin: 5px; }
+@media (max-width: 600px) { main { margin: 12px; padding: 16px; } nav button { flex: 1; } }

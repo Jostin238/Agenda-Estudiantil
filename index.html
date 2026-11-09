@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agenda Estudiantil</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header><h1>Agenda Estudiantil</h1></header>
+  <nav aria-label="Menú principal">
+    <button type="button" onclick="mostrar('inicio')">Inicio</button>
+    <button type="button" onclick="mostrar('agregar')">Agregar tarea</button>
+    <button type="button" onclick="mostrar('tareas')">Mis tareas</button>
+  </nav>
+  <main>
+    <section id="inicio">
+      <h2>Bienvenido</h2>
+      <p>Organiza tus tareas de forma fácil.</p>
+      <p id="resumen"></p>
+    </section>
+    <section id="agregar" hidden>
+      <h2>Agregar tarea</h2>
+      <form id="formulario">
+        <label for="nombre">Nombre de la tarea</label>
+        <input id="nombre" required maxlength="80" placeholder="Ejemplo: Estudiar matemáticas">
+        <label for="fecha">Fecha de entrega</label>
+        <input id="fecha" type="date" required>
+        <button type="submit">Guardar tarea</button>
+      </form>
+      <p id="mensaje" role="status"></p>
+    </section>
+    <section id="tareas" hidden>
+      <h2>Mis tareas</h2>
+      <ul id="lista"></ul>
+    </section>
+  </main>
+  <footer><p>Agenda Estudiantil</p></footer>
+</body>
+</html>
